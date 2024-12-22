@@ -2,7 +2,7 @@ from pickle import load
 import streamlit as st
 import os
 
-model_file = "optimized_random_forest_model_1000estimators_max_depth5_min_samples_split5_min_samples_leaf2_42.sav"
+model_file = "src/optimized_random_forest_model_1000estimators_max_depth5_min_samples_split5_min_samples_leaf2_42.sav"
 
 if not os.path.exists(model_file):
     st.error(f"The file of the model {model_file} is not found. Make sure it i in the system")
