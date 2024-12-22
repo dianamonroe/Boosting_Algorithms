@@ -2,6 +2,8 @@ from pickle import load
 import streamlit as st
 import os
 
+# External URL of the created App "Iris - Model prediction": http://172.166.156.163:8501
+
 model_file = "src/optimized_random_forest_model_1000estimators_max_depth5_min_samples_split5_min_samples_leaf2_42.sav"
 
 if not os.path.exists(model_file):
